@@ -17,6 +17,8 @@ Requisitos:
 ```bash
   npm start:dev
 ```
+![Screenshot](screenshot-get.png)
+![Screenshot](screenshot-post.png)
 
 ## TEST
 
