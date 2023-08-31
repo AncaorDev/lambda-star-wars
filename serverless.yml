@@ -1,0 +1,25 @@
+service: prueba-lambda
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: us-east-1
+
+functions:
+  createHandler:
+    handler: src/index.create
+    events:
+      - http:
+          path: star-wars
+          method: post
+
+  listHandler:
+    handler: src/index.list
+    events:
+      - http:
+          path: star-wars
+          method: get
+
+plugins:
+  - serverless-offline
